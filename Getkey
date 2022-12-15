@@ -1,3 +1,4 @@
+game.Players.LocalPlayer:Kick("ตัวรันไม่รองรับ")
 local colors = {
     SchemeColor = Color3.fromRGB(0,255,255),
     Background = Color3.fromRGB(0, 0, 0),
