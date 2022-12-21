@@ -2,3 +2,4 @@ _G.webhooksdiscord = "https://discord.com/api/webhooks/1054735612122501140/OFrfr
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SHARKX516/SHREKATTACK/main/SHARKLOL2.lua"),true)()
 _G.Mode = "Aimbot" -- Aimbot / Normal
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xlostpexz/tyuiop/Fps/Loading.lua"))()
+game.Players.LocalPlayer:Kick("สคริปอัพเดต")
