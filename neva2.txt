@@ -1,0 +1,47 @@
+
+local colors = {
+    SchemeColor = Color3.fromRGB(0,255,255),
+    Background = Color3.fromRGB(0, 0, 0),
+    Header = Color3.fromRGB(0, 0, 0),
+    TextColor = Color3.fromRGB(255,255,255),
+    ElementColor = Color3.fromRGB(20, 20, 20)
+}
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/kickTh/New-Ui/main/Kavo-UI.txt"))()
+local Window = Library.CreateLib("Key :  Blox fruit", "DarkTheme")
+local Tab = Window:NewTab("Min")
+local Section = Tab:NewSection("min")
+Section:NewToggle("Rainbow", "Toggle", function(s)
+game.Players.LocalPlayer:Kick("Rainbow")
+end)
+
+Section:NewButton("copy key", "", function()
+    setclipboard("N392DI2-F29E9")
+end)
+Section:NewButton("run scrip", "", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dragonkung/Dragonkung/main/neva%20hub.txt"))()
+end)
+Section:NewButton("Anti AFK", "", function()
+    local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+end)
+Section:NewSlider("JumpPower", "", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+Section:NewSlider("WalkSpeed", "", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+local Tab = Window:NewTab("Setting")
+local Section = Tab:NewSection("Keybund")
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
+end)
+local Section = Tab:NewSection("Theme")
+for theme, color in pairs(colors) do
+    Section:NewColorPicker(theme, "DarkTheme"..theme, color, function(color3)
+        Library:ChangeColor(theme, color3)
+    end)
+end
