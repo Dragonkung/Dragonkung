@@ -1,16 +1,16 @@
 if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7449423635 then
     game.StarterGui:SetCore("SendNotification", {
       Icon = "rbxassetid://9152775759";
-      Title = "อาซันหน้าหี", 
-      Text = "อาซันหน้าหีๆๆๆๆๆ"
+      Title = "Kawnew X", 
+      Text = "Kawnew X"
   })
   
   wait(1)
   
   game.StarterGui:SetCore("SendNotification", {
       Icon = "http://www.roblox.com/asset/?id=6023426915";
-      Title = "อาซันขี้คาตูด", 
-      Text = "อีขี้คาตูด!!"
+      Title = "Kawnew X", 
+      Text = "Kawnew x"
   })
   
   wait(10)
