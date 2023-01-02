@@ -3,8 +3,7 @@ Kawnew hub กำลังจะกลับมาอีกครั้ง!!
 -จะมี ประสิทธิภาพ สูงขึ้นถึง60%
 สคริปไม่เเล็ค 
 มีภาษาไทย
-สคริปมีคามคืบหน้า 50%
-กำลังเเก้ไข auto farm และกำลังเเก้ไข  ESP โลก2
+สคริปมีคามคืบหน้า 100%
 
 
 ----------PC
@@ -12,6 +11,14 @@ Kawnew hub กำลังจะกลับมาอีกครั้ง!!
 
 --------------------------------Kawnew X ------------------
 
-【﻿50%】progress MOBIE
+【﻿100%】progress MOBIE
 【﻿10%】progress PC
 30/12/65-30/1/66
+
+
+
+Evade Scrip Kawnew X
+loadstring(game:HttpGet('https://github.com/Dragonkung/KawnewX/blob/main/Evade%20X%20hub.txt'))()
+Blox Fruit Kawnew X
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/Ultra5g.txt'))()
+Farm chats kawnew X
