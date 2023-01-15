@@ -1,0 +1,64 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/cerberus.lua"))()
+
+local window = Library.new("Kawnew X | Hidden Function") 
+
+window:LockScreenBoundaries(true) -- Args(<boolean> ConstrainToScreen)
+
+local tab = window:Tab("???") -- Args(<string> Name, <string?> TabImage)
+
+local section = tab:Section("Kawnew Race") -- Args(<string> Name)
+local fun = tab:Section("more ")
+
+
+local title = section:Title("Race") -- Args(<string> Name)
+title:ChangeText("Race On") -- Args(<String> NewText)
+
+local label = section:Label("Label") -- Args(<String> LabelText, <Number?> TextSize, <Color3?> TextColor)
+label:ChangeText("1") -- Args(<String> NewText, <Boolean?> PlayAnimation)
+
+local toggle = section:Toggle("Auto...", function(bool)
+       game:Shutdown()
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+section:Button("hint 2", function()
+    game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "??? hint2", 
+      Text = "Kill Something From The Dimension"
+  })
+  
+  wait(3)
+   game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "???", 
+      Text = "And Unlock "
+  })
+  
+  wait(30)
+  game:Shutdown()
+  
+end) -- Args(<String> Name, <Function> Callback)
+
+local dropdown = section:Dropdown("???") -- Args(<String> Name)
+dropdown:ChangeText("???") -- Args(<String> NewText)
+dropdown:Toggle("???") -- Dropdowns and searchbars can go inside dropdowns
+
+section:Slider("...", function(val)
+   print("Slider Value is: "..val)
+end) -- Args(<String> Name, <Function> Callback, <Number?> MaximumValue, <Number?> MinimumValue)
+
+local searchBar = section:SearchBar("Search...") -- Args(<String> PlaceholderText)
+searchBar:Toggle("????") -- Searchbars and dropdowns can go inside searchbars
+
+section:Keybind("???", function()
+   print("Keybind pressed!")
+end) -- Args(<String> Name, <Function> Callback, <String> DefaultKey)
+
+section:TextBox("No Past the hint!!", function(txt)
+   print("Textbox string is: "..txt)
+end) -- Args(<String> Name, <Function> Callback)
+
+section:ColorWheel("???", function(color)
+   print("ColorWheel color is: "..tostring(color))
+end) -- Args(<String> Name, <Function> Callback)
