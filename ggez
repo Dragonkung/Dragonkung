@@ -16,7 +16,7 @@ title:ChangeText("Race On") -- Args(<String> NewText)
 local label = section:Label("Label") -- Args(<String> LabelText, <Number?> TextSize, <Color3?> TextColor)
 label:ChangeText("1") -- Args(<String> NewText, <Boolean?> PlayAnimation)
 
-local toggle = section:Toggle("Auto...", function(bool)
+local toggle = section:Toggle("Race on", function(bool)
        game:Shutdown()
 end) -- Args(<String> Name, <Function> Callback)
 toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
