@@ -1,0 +1,7 @@
+local key = _G.Key
+local check = "https://pastebin.com/raw/VqiFQiz0?key=" .. key
+if game:HttpGet(check) == "Whitelisted" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dragonkung/Dragonkung/main/ggez"))()
+else
+game.Players.LocalPlayer:Kick("ใส่คำตอบผิด ลองหาใหม่ดูสิ")
+end
