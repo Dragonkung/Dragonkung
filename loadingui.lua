@@ -524,17 +524,19 @@ end
 local list = {
 	
 	--Blox Fruit
-	[994732206] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/Free/BloxFruitFree.lua'))()",
+	[994732206] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/Pre/BloxFruitPre.lua'))()",
 
 	
 	--Zombie Attack
-	[504035427]="loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/ZombieAtack.lua'))()",
+	[504035427]="loadstring(game:HttpGet('https://raw.githubusercontent.com/GamingScripter/V.G-Hub/main/Zombies%20Attack'))()",
 
 	
 	--Break In
-	[1318971886]="loadstring(game:HttpGet('https://pastebin.com/raw/xUGJt9Ry', true))()",
+	[1318971886]="loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/Brake%20in'))()",
 
-	
+	--Evade
+	[9872472334]="loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/Evade%20X%20hub.txt'))()",
+
 local listPre = {
 	
 	--Blox Fruit
