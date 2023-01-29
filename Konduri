@@ -1,0 +1,147 @@
+-- Gui --
+-- Version 1.1 --
+local Notification = require(game:GetService("ReplicatedStorage").Notification)
+Notification.new("<Color=Green> Kawnew X Key Scrip 4.0!! <Color=/>"):Display()
+-- Instances --
+local CoreGui = game:GetService("StarterGui")
+
+local Tutorial = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local HubTitle = Instance.new("TextBox")
+local Submit = Instance.new("TextButton")
+local Input = Instance.new("TextBox")
+local Exit = Instance.new("TextButton")
+local Key = Instance.new("TextBox")
+local GetKey = Instance.new("TextButton")
+local WrongKey = Instance.new("Frame")
+local WrongKeyText = Instance.new("TextBox")
+local WrongOk = Instance.new("TextButton")
+
+-- Properties --
+
+Tutorial.Name = "Tutorial"
+Tutorial.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Tutorial.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = Tutorial
+main.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+main.Position = UDim2.new(0.10, 0, 0.03, 0)
+main.Size = UDim2.new(0, 206, 0, 100)
+main.Active = true
+main.Draggable = true
+
+HubTitle.Name = "Gui"
+HubTitle.Parent = main
+HubTitle.Text = 'Kawnew X Key 4.0'
+HubTitle.Position = UDim2.new(0.25, 0, 0.08, 0)
+HubTitle.TextColor3 = Color3.fromRGB(999, 999, 999)
+
+
+Key.Name = "Key"
+Key.Parent = main
+Key.Text = 'Key:'
+Key.Position = UDim2.new(0.125, 0, 0.30, 0)
+Key.TextColor3 = Color3.fromRGB(999, 999, 999)
+
+Exit.Name = "Exit"
+Exit.Parent = main
+Exit.Text = '×'
+Exit.Position = UDim2.new(0.925, 0, 0.05, 0)
+Exit.Size = UDim2.new(0, 10, 0, 10)
+Exit.TextColor3 = Color3.fromRGB(255, 0, 0)
+Exit.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+Exit.TextSize = 11.000
+Exit.MouseButton1Down:connect(function()
+	if main.Visible == true then
+		main.Visible = false
+	end
+end)
+
+Submit.Name = "Submit"
+Submit.Parent = main
+Submit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Submit.Position = UDim2.new(0.85, 0, 0.225, 0)
+Submit.Size = UDim2.new(0, 15, 0, 15)
+Submit.Font = Enum.Font.SourceSans
+Submit.Text = '✓'
+Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Submit.TextSize = 15.000
+Submit.MouseButton1Down:connect(function()
+	if Input.Text == "FreeKey" then
+		main.Visible = false
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Dragonkung/KawnewX/main/free%20(1).lua"))()
+	else 
+		WrongKey.Visible = true
+		
+		CoreGui:SetCore("SendNotification", {
+			Title = "Kawnew X 4.0 (Beta)";
+			Text = "Wrong Key";
+			Duration = 5;
+			TextColor3 = Color3.fromRGB(255, 255, 255)
+		})
+	end
+end)
+
+Input.Name = "Input"
+Input.Parent = main
+Input.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Input.Position = UDim2.new(0.2, 0, 0.20, 0)
+Input.Size = UDim2.new(0, 120, 0, 20)
+Input.Font = Enum.Font.SourceSans
+Input.Text = ""
+Input.TextColor3 = Color3.fromRGB(0, 0, 0)
+Input.TextSize = 11.000
+
+GetKey.Name= "GetKey"
+GetKey.Parent = main
+GetKey.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GetKey.Position = UDim2.new(0.2, 0, 0.55, 0)
+GetKey.Size = UDim2.new(0, 120, 0, 20)
+GetKey.Font = Enum.Font.SourceSans
+GetKey.Text = 'Copy Get Key Link'
+GetKey.TextColor3 = Color3.fromRGB(0, 0, 0)
+GetKey.TextSize = 11.000
+GetKey.MouseButton1Down:connect(function()
+	setclipboard("https://sites.google.com/d/1K-AOrwrl3FHjkSpbow9y1ua2mOV7R-MX/p/19up_l4p0VlrqF1tqZj8Hai2O4EjktXLd/edit")
+	
+	CoreGui:SetCore("SendNotification", {
+			Title = "Kawnew X 4.0 (Beta) ";
+			Text = "Key Link Copied";
+			Duration = 5;
+			TextColor3 = Color3.fromRGB(255, 255, 255)
+			})
+end)
+
+WrongKey.Name= "Wrong Key"
+WrongKey.Parent = Tutorial
+WrongKey.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+WrongKey.Position = UDim2.new(0.315, 0, 0.045, 0)
+WrongKey.Size = UDim2.new(0, 100, 0, 75)
+WrongKey.Visible = false
+WrongKey.Active = true
+WrongKey.Draggable = true
+
+WrongKeyText.Name = "WrongKeyText"
+WrongKeyText.Parent = WrongKey
+WrongKeyText.Text = 'Incorrect Key'
+WrongKeyText.Position = UDim2.new(0.525, 0, 0.4, 0)
+WrongKeyText.TextColor3 = Color3.fromRGB(999, 999, 999)
+
+WrongOk.Name = "Ok"
+WrongOk.Parent = WrongKey
+WrongOk.Text = 'Ok'
+WrongOk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WrongOk.Position = UDim2.new(0.35, 0, 0.6, 0)
+WrongOk.Size = UDim2.new(0, 30, 0, 15)
+WrongOk.Font = Enum.Font.SourceSans
+WrongOk.TextSize = 11.000
+WrongOk.TextColor3 = Color3.fromRGB(1, 1, 1)
+WrongOk.MouseButton1Down:connect(function()
+	WrongKey.Visible = false
+	
+end)
+
+
+local Notification = require(game:GetService("ReplicatedStorage").Notification)
+Notification.new("<Color=Red> Beta Testing... <Color=/>"):Display()
