@@ -103,7 +103,7 @@ GetKey.Text = 'Copy Get Key Link'
 GetKey.TextColor3 = Color3.fromRGB(0, 0, 0)
 GetKey.TextSize = 11.000
 GetKey.MouseButton1Down:connect(function()
-	setclipboard("https://sites.google.com/d/1K-AOrwrl3FHjkSpbow9y1ua2mOV7R-MX/p/19up_l4p0VlrqF1tqZj8Hai2O4EjktXLd/edit")
+	setclipboard("https://sites.google.com/view/kawnew1/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81")
 	
 	CoreGui:SetCore("SendNotification", {
 			Title = "Kawnew X 4.0 (Beta) ";
