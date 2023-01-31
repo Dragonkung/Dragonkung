@@ -68,9 +68,9 @@ Submit.Text = '✓'
 Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
 Submit.TextSize = 15.000
 Submit.MouseButton1Down:connect(function()
-	if Input.Text == "FreeKey" then
+	if Input.Text == "K" then
 		main.Visible = false
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Dragonkung/KawnewX/main/free%20(1).lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Dragonkung/KawnewX/main/K_Now%20Last%203.0"))()
 	else 
 		WrongKey.Visible = true
 		
@@ -142,6 +142,6 @@ WrongOk.MouseButton1Down:connect(function()
 	
 end)
 
-
+wait(2)
 local Notification = require(game:GetService("ReplicatedStorage").Notification)
 Notification.new("<Color=Red> Beta Testing... <Color=/>"):Display()
