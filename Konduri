@@ -1,7 +1,7 @@
 -- Gui --
 -- Version 1.1 --
 local Notification = require(game:GetService("ReplicatedStorage").Notification)
-Notification.new("<Color=Green> Kawnew X Key Scrip 4.0!! <Color=/>"):Display()
+Notification.new("<Color=Green> K_Now Key Scrip 4.0!! <Color=/>"):Display()
 -- Instances --
 local CoreGui = game:GetService("StarterGui")
 
