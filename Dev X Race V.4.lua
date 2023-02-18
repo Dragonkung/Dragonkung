@@ -1029,7 +1029,7 @@
     
     Main:AddLabel("วาร์ป")
     
-    Main:AddToggle("Toggle",true,function(value)
+    Main:AddToggle("กันเเล็ค/ค้าง",true,function(value)
         _G.AddToggle = value
     end)
     
@@ -1139,7 +1139,7 @@ end)
         _G.Main = value
     end)
     rn:AddSeperator("บันไดนาฬิกา")
- rn:AddToggle("ขึ้นบันไดโดยไม่วาร์ปกลับ",_G.K,function(value)
-        _G.K = value
+ rn:AddToggle("ขึ้นบันไดโดยไม่วาร์ปกลับ",nil,function(value)
+game.Players.LocalPlayer.Character.InfiniteStairs.Disabled = value
     end)
     
