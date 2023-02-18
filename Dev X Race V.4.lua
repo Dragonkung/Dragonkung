@@ -1138,6 +1138,8 @@ end)
    rn:AddSlider("Select Main",1,100,1,function(value)
         _G.Main = value
     end)
-    
-  
+    rn:AddSeperator("บันไดนาฬิกา")
+ rn:AddToggle("ขึ้นบันไดโดยไม่วาร์ปกลับ",_G.K,function(value)
+        _G.K = value
+    end)
     
