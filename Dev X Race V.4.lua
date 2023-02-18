@@ -1141,5 +1141,7 @@ end)
     rn:AddSeperator("บันไดนาฬิกา")
  rn:AddToggle("ขึ้นบันไดโดยไม่วาร์ปกลับ",nil,function(value)
 game.Players.LocalPlayer.Character.InfiniteStairs.Disabled = value
-    end)
+ game:GetService("Workspace").Map["Temple of Time"].DoNotEnter:Remove()
+ game:GetService("Workspace").Map["Temple of Time"].ClockRoomExit:Remove()
+ end)
     
