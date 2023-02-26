@@ -10810,9 +10810,7 @@ spawn(function()
    end)
 end)
 
-AutoMisc:Toggle("Fast Attack",true,function(value)
-_G.FastAttackNormalSpeed = true
-end)
+
             
             local SeraphFrame = debug.getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts:WaitForChild("CombatFramework")))[2]
             local VirtualUser = game:GetService('VirtualUser')
@@ -10849,27 +10847,6 @@ end)
                 return Hits
             end
             
-            task.spawn(
-                function()
-                while wait(0) do
-                    if  _G.FastAttackNormalSpeed then
-                        if SeraphFrame.activeController then
-                            if v.Humanoid.Health > 0 then
-                              SeraphFrame.activeController.attacking = false
-                                SeraphFrame.activeController.timeToNextBlock = 0
-                               SeraphFrame.activeController.humanoid.AutoRotate = true
-                               SeraphFrame.activeController.increment = 3
-                               SeraphFrame.activeController.blocking = false
-                               SeraphFrame.activeController.hitboxMagnitude = 150
-                                SeraphFrame.activeController.timeToNextAttack = 0
-                                SeraphFrame.activeController.focusStart = 0
-                                SeraphFrame.activeController.humanoid.AutoRotate = true
-                                SeraphFrame.activeController.increment = 1 + 1 / 1
-                             end
-                        end
-                    end
-                end
-            end)
             
             function Boost()
                 spawn(function()
