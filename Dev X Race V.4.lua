@@ -1035,24 +1035,6 @@ u:AddLabel("-จบ!! ")
     
     
     Main:AddLabel("วาร์ป")
-    
-    Main:AddToggle("กันเเล็ค/ค้าง",true,function(value)
-        _G.Lag = value
-    end)
-
-    spawn(function()
-  pcall(function() 
-  while wait() do
-       if _G.Lag then
-print("K_Now Fix Lag!")
-  game.StarterGui:SetCore("SendNotification", {
-      Icon = "";
-      Title = "K_Now X Report ", 
-      Text = "FixLag Is Notcomplete 937/3796"
-  })
-  
-  wait(2)
-end)
         
     Main:AddButton("ไปที่ Temple of time",function()
       Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.35546875, 14895.3017578125, 102.62469482421875)
