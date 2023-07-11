@@ -1008,9 +1008,11 @@
     
     -----------------    -----------------    -----------------    -----------------    -----------------    -----------------  
     
-u:AddSeperator("Update 1.1")
-u:AddLabel("-Add NewTap \n")
-
+u:AddSeperator("Update 1")
+u:AddLabel("-Add NewTap ")
+u:AddLabel("-FixBug(Kill aura) ")
+u:AddLabel("-Update Anti Lag/Cpuclock ")
+u:AddLabel("-จบ!! ")
     Main:AddSeperator("Main")
     
     Time = Main:AddLabel("Server Time")
@@ -1035,9 +1037,15 @@ u:AddLabel("-Add NewTap \n")
     Main:AddLabel("วาร์ป")
     
     Main:AddToggle("กันเเล็ค/ค้าง",true,function(value)
-        _G.AddToggle = value
+        _G.Lag = value
     end)
-    
+
+    spawn(function()
+  pcall(function() 
+  while wait() do
+       if _G.Lag then
+print("K_Now Fix Lag!")
+end)
         
     Main:AddButton("ไปที่ Temple of time",function()
       Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.35546875, 14895.3017578125, 102.62469482421875)
