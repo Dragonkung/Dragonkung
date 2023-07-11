@@ -999,7 +999,7 @@
    
     local SOMEXHUB = library:AddWindow("K_Now X|Race V.4 ",Enum.KeyCode.RightControl)
     -----------------    -----------------    ----------------- -----------------    -----------------    -----------------  
-    local u = SOMEXHUB:AddTab("เกี่ยวกับการอัพเดต","")
+    local u = SOMEXHUB:AddTab("เกี่ยวกับการอัพเดต","6026568198")
     local Main = SOMEXHUB:AddTab("วาร์ปไปที่ทำเผ่า","6026568198")
     local n = SOMEXHUB:AddTab("วาร์ป เร็ว","6026568198")
     local tx = SOMEXHUB:AddTab("ผ่านด่านทำเผ่า","7251993295")
@@ -1013,6 +1013,7 @@ u:AddLabel("-Add NewTap ")
 u:AddLabel("-FixBug(Kill aura) ")
 u:AddLabel("-Update Anti Lag/Cpuclock ")
 u:AddLabel("-จบ!! ")
+-----update------
     Main:AddSeperator("Main")
     
     Time = Main:AddLabel("Server Time")
@@ -1148,5 +1149,4 @@ game.Players.LocalPlayer.Character.InfiniteStairs.Disabled = value
  end)
     er:AddSeperator("แปลงร่างเผ่า 4(เเค่ อนิเมชั่น)")
 er:AddButton("Comming Soon!!",function()
-
     end)
