@@ -1063,7 +1063,7 @@ Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFram
     end)
                Main:AddButton("ไปที่ ประตูเผ่ามนุษย์(ต้องอยู่ใน Temple)",function()
         Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(29020.66015625, 14889.4267578125, -379.2682800292969)
-        wait(1.6)
+        wait(1.4)
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(29237.294921875, 14889.4267578125, -206.94955444335938)
     end)
             Main:AddButton("ไปที่ ประตูเผ่าสกาย(ต้องอยู่ใน Temple)",function()
