@@ -1045,6 +1045,13 @@ u:AddLabel("-จบ!! ")
   while wait() do
        if _G.Lag then
 print("K_Now Fix Lag!")
+  game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "K_Now X Report ", 
+      Text = "FixLag Is Notcomplete 937/3796"
+  })
+  
+  wait(2)
 end)
         
     Main:AddButton("ไปที่ Temple of time",function()
