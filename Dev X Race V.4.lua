@@ -997,15 +997,20 @@
 
    
    
-    local SOMEXHUB = library:AddWindow("Race V.4 | Dev X ",Enum.KeyCode.RightControl)
-    -----------------    -----------------    -----------------    -----------------    -----------------    -----------------  
+    local SOMEXHUB = library:AddWindow("K_Now X|Race V.4 ",Enum.KeyCode.RightControl)
+    -----------------    -----------------    ----------------- -----------------    -----------------    -----------------  
+    local u = SOMEXHUB:AddTab("เกี่ยวกับการอัพเดต","")
     local Main = SOMEXHUB:AddTab("วาร์ปไปที่ทำเผ่า","6026568198")
     local n = SOMEXHUB:AddTab("วาร์ป เร็ว","6026568198")
     local tx = SOMEXHUB:AddTab("ผ่านด่านทำเผ่า","7251993295")
     local rn = SOMEXHUB:AddTab("อื่นๆ","6034900727")
+    local er = SOMEXHUB:AddTab("อื่นๆสำหรับเผ่า 4","6034900727")
     
     -----------------    -----------------    -----------------    -----------------    -----------------    -----------------  
     
+u:AddSeperator("Update 1.1")
+u:AddLabel("-Add NewTap \n")
+
     Main:AddSeperator("Main")
     
     Time = Main:AddLabel("Server Time")
@@ -1138,10 +1143,13 @@ end)
    rn:AddSlider("Select Main",1,100,1,function(value)
         _G.Main = value
     end)
-    rn:AddSeperator("บันไดนาฬิกา")
- rn:AddToggle("ขึ้นบันไดโดยไม่วาร์ปกลับ",nil,function(value)
+    er:AddSeperator("บันไดนาฬิกา")
+ er:AddToggle("ขึ้นบันไดโดยไม่วาร์ปกลับ",nil,function(value)
 game.Players.LocalPlayer.Character.InfiniteStairs.Disabled = value
  game:GetService("Workspace").Map["Temple of Time"].DoNotEnter:Remove()
  game:GetService("Workspace").Map["Temple of Time"].ClockRoomExit:Remove()
  end)
-    
+    er:AddSeperator("แปลงร่างเผ่า 4(เเค่ อนิเมชั่น)")
+er:AddButton("Comming Soon!!",function()
+
+    end)
