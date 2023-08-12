@@ -207,7 +207,7 @@ mainDiscord.MouseEnter:Connect(function()
   end)
 
 mainDiscord.MouseButton1Click:Connect(function()
-  setclipboard("https://discord.gg/Z6YR7A6tg8")
+  setclipboard("Comming Soon😭")
   wait(.1)
   game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Discord",
