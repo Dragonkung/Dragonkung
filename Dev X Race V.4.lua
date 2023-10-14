@@ -1,4 +1,4 @@
-    
+    --เสือกอีเเก่
     game:GetService("Players").LocalPlayer.Idled:connect(function()
         game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
         wait(1)
@@ -1016,6 +1016,10 @@ u:AddLabel("-Fix Human TP")
 u:AddSeperator("Update 2")
 u:AddLabel("-Fix Lag In Dungeon")
 u:AddLabel("-Update Performance Graphics ")
+u:AddSeperator("Update 3")
+u:AddLabel("-FixBug Ui on/off")
+u:AddLabel("-Update HumanTP ")
+
 -----update------
     Main:AddSeperator("Main")
     
@@ -1065,7 +1069,7 @@ Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFram
     end)
                Main:AddButton("ไปที่ ประตูเผ่ามนุษย์(ต้องอยู่ใน Temple)",function()
         Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(29020.66015625, 14889.4267578125, -379.2682800292969)
-        wait(0.8)
+        wait(0.5)
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(29237.294921875, 14889.4267578125, -206.94955444335938)
     end)
             Main:AddButton("ไปที่ ประตูเผ่าสกาย(ต้องอยู่ใน Temple)",function()
