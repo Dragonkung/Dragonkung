@@ -997,7 +997,7 @@
 
    
    
-    local SOMEXHUB = library:AddWindow("K_Now X|Race V.4 ",Enum.KeyCode.RightControl)
+    local SOMEXHUB = library:AddWindow("K_Now X|Race V.4 -Premium Scrip",Enum.KeyCode.RightControl)
     -----------------    -----------------    ----------------- -----------------    -----------------    -----------------  
     local u = SOMEXHUB:AddTab("เกี่ยวกับการอัพเดต","6026568198")
     local Main = SOMEXHUB:AddTab("วาร์ปไปที่ทำเผ่า","6026568198")
