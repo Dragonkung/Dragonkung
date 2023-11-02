@@ -1108,13 +1108,15 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalP
    end
   end)
 n:AddLabel("เร็วกว่าที่เขาจะรักมึงอีก")
+        
     n:AddButton("Mansion",function()
-     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-12471.169921875, 374.94024658203, -7551.677734375))
-    end)
+     game.Players.LocalPlayer.Character.Head:Destroy()
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(13274.528320313, 531.82073974609, -7579.22265625)
+end)
      n:AddButton("Npc Temple of time",function()
  Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2947.556884765625, 2281.630615234375, -7213.54931640625)
     end)
-    n:AddButton("TIki Outpost"),function()
+    n:AddButton("TIki Outpost",function()
     game.Players.LocalPlayer.Character.Head:Destroygame.Players.LocalPlayer.Character.Head:Destroy()
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-16214.486328125, 9.06057357788086, 517.6160888671875)
 end)
@@ -1164,7 +1166,7 @@ game.Players.LocalPlayer.Character.InfiniteStairs.Disabled = value
  game:GetService("Workspace").Map["Temple of Time"].DoNotEnter:Remove()
  game:GetService("Workspace").Map["Temple of Time"].ClockRoomExit:Remove()
  end)
-    er:AddSeperator("แปลงร่างเผ่า 4(เเค่ อนิเมชั่น)")
+    er:AddSeperator("แปลงร่างเผ่า 4(เเค่ อนิเมชั่น)"
 er:AddButton("Comming Soon!!",function()
     end)
 
@@ -1184,6 +1186,7 @@ u:AddSeperator("Update 3")
 u:AddLabel("-Update Sky Trial")
 u:AddLabel("-Remove Shsdow 50% ")
 u:AddSeperator("Update 4")
+-----update------
+    u:AddSeperator("Update 4")
 u:AddLabel("-Fix TP To Temple of time")
 u:AddLable("-Add new ไปที่หน้าปะตู+บนกระจก")
------update------
