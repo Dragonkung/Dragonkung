@@ -4934,7 +4934,7 @@ if BF then
 		end)
 	end)
 	
-	local Main = library:Window("Ren","Blox Fruit 1.18.2.4.5WeP")
+	local Main = library:Window("K_Now","Blox Fruit 1.18.2.4.5WeP")
 	local AutoFarmTab = Main:Tab("Auto Farm")
 	local MainAutoFarmFunction = AutoFarm(Ms,NameQuest,LevelQuest,NameMon,CFrameMon,CFrameQuest,"AutoFarmLevel")
 	spawn(function()
