@@ -72,7 +72,7 @@ if BF then
 	repeat wait() until game.ReplicatedStorage
 	repeat wait() until game.ReplicatedStorage:FindFirstChild("Remotes");
 	repeat wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui");
-	repeat wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
+	repeat wait() until game.Players.poramee2552.PlayerGui:FindFirstChild("Main");
 	repeat wait()
 		if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main").ChooseTeam.Visible == true then
 			if getgenv().Setting["Join Team"] == "Pirate" then
