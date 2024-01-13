@@ -52,14 +52,14 @@ if not _G.Settings then
             Destroy = false
         },
         MeshParts = {
-            LowerQuality = true,
+            LowerQuality = false,
             Invisible = false,
-            NoTexture = false,
+            NoTexture = true,
             NoMesh = false,
             Destroy = false
         },
         Other = {
-            ["FPS Cap"] = 350, -- Set this true to uncap FPS
+            ["FPS Cap"] = 4000, -- Set this true to uncap FPS
             ["No Camera Effects"] = true,
             ["No Clothes"] = true,
             ["Low Water Graphics"] = true,
@@ -369,12 +369,6 @@ for i, v in pairs(Descendants) do
         WaitNumber = WaitNumber + StartNumber
     end
 end
-StarterGui:SetCore("SendNotification", {
-    Title = "K_Now",
-    Text = "FPS Booster Loaded!",
-    Duration = math.huge,
-    Button1 = "Okay"
-})
 warn("FPS Booster Loaded!")
 --game.DescendantAdded:Connect(CheckIfBad)
 --[[game.DescendantAdded:Connect(function(value)
