@@ -3695,7 +3695,7 @@ game.StarterGui:SetCore("SendNotification", {
 	Duration = 8
 })
 
-local win = library:Window("Switch",[[Hub]],[[Version : Premium ]],"9606070311",Enum.KeyCode.RightControl)
+local win = library:Window("Kawnew",[[Hub]],[[Version : Premium ]],"9606070311",Enum.KeyCode.RightControl)
 local General_Tab = win:Tab("General",[[7040391851]])
 local Quest_Tab = win:Tab("    Quest & Item",[[9606626859]])
 local PvP_Tab = win:Tab("PvP",[[9606626034]])
